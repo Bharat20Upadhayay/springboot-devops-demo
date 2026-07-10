@@ -44,14 +44,28 @@ pipeline {
                 bat 'docker push %IMAGE_NAME%:%BUILD_NUMBER%'
             }
         }
+
+        stage('Deploy to Kubernetes') {
+            steps {
+                bat 'kubectl set image deployment/demo-app demo-app=%IMAGE_NAME%:%BUILD_NUMBER%'
+            }
+        }
+
+        stage('Verify Rollout') {
+            steps {
+                bat 'kubectl rollout status deployment/demo-app'
+            }
+        }
     }
 
     post {
         success {
-            echo 'Pipeline completed successfully!'
+            echo 'Deployment completed successfully.'
         }
+
         failure {
-            echo 'Pipeline failed.'
+            echo 'Deployment failed.'
         }
     }
 }
+  
