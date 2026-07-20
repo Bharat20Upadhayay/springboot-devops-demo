@@ -52,22 +52,6 @@ Spring Boot Application
 
 🛠  # Tech Stack #
 
-Category	                 Technology
-
-Language                  	Java 17
-Framework	Spring Boot
-Build Tool	                Maven
-Version Control            	Git
-Repository	               GitHub
-CI/CD	                     Jenkins
-Containerization	         Docker
-Image Registry           	Docker Hub
-Container Orchestration
-Kubernetes                (Kind)
-Operating System	      Windows / Linux
-IDE                   	Visual Studio Code
-
- OR 
 
 | Category | Details |
 | --- | --- |
