@@ -131,7 +131,11 @@ Docker Desktop	Required
 Kubernetes	Kind / Minikube
 kubectl	CLI tool
 Jenkins	CI/CD
+<h2 align="center">🏗️ End-to-End DevOps Architecture</h2>
 
+<p align="center">
+  <img src="images/architecture.png" width="1000">
+</p>
 
 
 
