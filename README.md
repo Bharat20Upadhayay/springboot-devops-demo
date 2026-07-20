@@ -66,3 +66,69 @@ Spring Boot Application
 | **[Orchestration](ca://s?q=Explain_Kubernetes_Kind)** | Kubernetes (Kind) |
 | **[Operating System](ca://s?q=Explain_Windows_vs_Linux)** | Windows / Linux |
 | **[IDE](ca://s?q=Explain_VS_Code)** | Visual Studio Code |
+
+
+📂 Project Structure #
+
+
+springboot-devops-demo/
+│
+├── src/
+├── target/
+├── Dockerfile
+├── Jenkinsfile
+├── pom.xml
+├── k8s/
+│ ├── deployment.yaml
+│ └── service.yaml
+└── README.md
+
+⚙ CI/CD Pipeline #
+
+Code Push → Developer commits and pushes code to GitHub.
+
+Jenkins Build → Jenkins checks out the latest code.
+
+Maven Compile → Maven compiles and packages the application.
+
+Docker Image → Docker builds a container image.
+
+Docker Hub → The image is pushed to Docker Hub.
+
+Kubernetes Deploy → Kubernetes (Kind) deploys the latest container.
+
+Health Probes → Readiness and liveness probes monitor application health.
+
+Rolling Updates → Rolling updates ensure zero/minimal downtime.
+
+
+🚀 Features #
+
+ 
+Spring Boot REST API
+Maven Build Automation
+Jenkins Declarative Pipeline
+Docker Image Creation
+Docker Hub Integration
+Kubernetes Deployment
+Rolling Updates
+Rollback Support
+Self-Healing Pods
+Readiness Probe
+Liveness Probe
+Resource Requests and Limits.
+
+
+
+📋 Prerequisites  #
+
+Java 17+
+Maven
+Git
+Docker Desktop
+Kubernetes (Kind or Minikube)
+kubectl
+Jenkins.
+
+
+
