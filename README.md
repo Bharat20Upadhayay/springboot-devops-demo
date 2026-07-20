@@ -120,15 +120,19 @@ Resource Requests and Limits.
 
 
 
-📋 Prerequisites  #
+🛠  # Prerequisites / Tools #
 
-Java 17+
-Maven
-Git
-Docker Desktop
-Kubernetes (Kind or Minikube)
-kubectl
-Jenkins.
+
+Tool	Version / Notes
+Java	17+
+Maven	Latest
+Git	Any modern version
+Docker Desktop	Required
+Kubernetes	Kind / Minikube
+kubectl	CLI tool
+Jenkins	CI/CD
+
+
 
 
 
